@@ -40,3 +40,9 @@ jobs:
           path: target/surefire-reports/*.xml
           reporter: java-junit
           fail-on-error: true
+
+      - name: Upload report as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: html-report
+          path: target/site/surefire-report.html
