@@ -45,4 +45,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: html-report
-          path: target/site/surefire-report.html
+          path: target/site
